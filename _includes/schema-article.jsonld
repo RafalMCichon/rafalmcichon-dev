@@ -1,0 +1,16 @@
+{%- assign meta_desc = page.description | default: site.description -%}
+{%- assign og_image = page.image | default: site.image | default: "/assets/og-default.png" -%}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": {{ page.title | jsonify }},
+  "description": {{ meta_desc | jsonify }},
+  "author": { "@type": "Person", "name": "Rafal M Cichon", "url": "{{ site.url }}/" },
+  "publisher": { "@type": "Person", "name": "Rafal M Cichon", "url": "{{ site.url }}/" },
+  "datePublished": "{{ page.date | date_to_xmlschema }}",
+  "dateModified": "{{ page.last_modified_at | default: page.date | date_to_xmlschema }}",
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "{{ site.url }}{{ page.url }}" },
+  "image": ["{{ site.url }}{{ og_image }}"]
+}
+</script>

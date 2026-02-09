@@ -1,0 +1,16 @@
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Rafal M Cichon",
+  "url": "{{ site.url }}/",
+  "jobTitle": "Senior Digital Growth & Web Engineer",
+  "worksFor": { "@type": "Organization", "name": "Orlando Foods", "url": "https://orlandofoods.com/" },
+  "sameAs": [
+    "https://www.linkedin.com/in/rafalmcichon/",
+    "https://github.com/RafalMCichon",
+    "https://twitter.com/rafalmcichon",
+    "https://rafalmcichon.com/"
+  ]
+}
+</script>

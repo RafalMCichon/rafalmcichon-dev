@@ -1,0 +1,26 @@
+title: "Rafal M Cichon — Resume"
+description: "Resume for Rafal M Cichon — Shopify UX, CRO, SEO, performance, accessibility."
+url: "https://rafalmcichon.dev"
+baseurl: ""
+lang: "en"
+timezone: "America/New_York"
+
+permalink: pretty
+
+plugins:
+  - jekyll-sitemap
+  - jekyll-feed
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      image: "/assets/og-default.png"
+      robots: "index,follow"
+      layout: page
+
+exclude:
+  - README.md
+  - .github
+  - vendor
+  - Gemfile.lock
