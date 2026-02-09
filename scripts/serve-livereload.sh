@@ -5,6 +5,12 @@ HOST="${HOST:-127.0.0.1}"
 PORT="${PORT:-4001}"
 LR_PORT="${LR_PORT:-35730}"
 
+echo "Starting Jekyll server with LiveReload"
+echo "Server: http://$HOST:$PORT/"
+echo "LiveReload: $LR_PORT"
+echo "Press Ctrl+C to stop"
+echo ""
+
 # Check main server port
 if command -v lsof >/dev/null 2>&1; then
   if lsof -iTCP:"$PORT" -sTCP:LISTEN -t >/dev/null 2>&1; then

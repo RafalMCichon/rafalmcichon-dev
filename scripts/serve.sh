@@ -4,6 +4,10 @@ set -eu
 HOST="${HOST:-127.0.0.1}"
 PORT="${PORT:-4001}"
 
+echo "Starting Jekyll server at http://$HOST:$PORT/"
+echo "Press Ctrl+C to stop"
+echo ""
+
 if command -v lsof >/dev/null 2>&1; then
   if lsof -iTCP:"$PORT" -sTCP:LISTEN -t >/dev/null 2>&1; then
     echo "ERROR: Port $PORT is already in use."
