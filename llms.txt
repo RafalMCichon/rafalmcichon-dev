@@ -1,0 +1,8 @@
+# Rafal M Cichon - Resume
+
+This site contains a detailed, resume-style overview of roles, skills, and selected outcomes.
+For portfolio case studies and notes, see https://rafalmcichon.com/.
+
+Primary pages:
+- / - resume
+- /contact/ - contact and links
